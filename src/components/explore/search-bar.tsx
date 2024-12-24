@@ -12,9 +12,9 @@ interface SearchBarProps {
 export function SearchBar({ onSearch, isSearching }: SearchBarProps) {
   return (
     <div className="flex items-center justify-end sm:justify-normal gap-4 max-w-2xl mx-auto">
-      <Logo />
+      <Logo className="absolute left-4" />
       <SearchInput onSearch={onSearch} isSearching={isSearching} />
-      <User className="ml-auto absolute right-2" />
+      <User className="absolute right-4" />
     </div>
   );
 }

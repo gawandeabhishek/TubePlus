@@ -20,7 +20,7 @@ export function SearchInput({ onSearch, isSearching, className }: SearchInputPro
   }, [onSearch]);
 
   return (
-    <div className="relative sm:flex-1 mr-6 sm:mr-0">
+    <div className="relative sm:flex-1 mr-4 sm:mr-0">
       {isSearching ? (
         <Loader2 className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground animate-spin" />
       ) : (
@@ -30,7 +30,7 @@ export function SearchInput({ onSearch, isSearching, className }: SearchInputPro
         value={value}
         onChange={handleChange}
         placeholder="Search videos, channels, or playlists" 
-        className={`pl-10 w-full bg-background ${className}`}
+        className={`pl-10 w-[90%] sm:w-full bg-background ${className}`}
       />
     </div>
   );
